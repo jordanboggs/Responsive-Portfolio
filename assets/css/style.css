@@ -31,7 +31,7 @@
 }
 
 @media only screen and (min-width: 781px) {
-  // For tablets: 
+  /* For tablets: */
   .col-m-0 {width: 0%;}
   .col-m-1 {width: 8.33%;}
   .col-m-2 {width: 16.66%;}
@@ -46,9 +46,12 @@
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
   #logo {font-size: 1.4em;}
-  #menu {margin: 5px 0 5px 0; padding-right: 8.33%; text-align: right;
-  }
+  #menu {margin: 5px 0 5px 0; 
+         padding-right: 8.33%; 
+         text-align: right;}
+  #bio-img {padding: 0 5px;}
 }
+
 
 @media only screen and (min-width: 1070px) {
   /* For desktop: */
@@ -65,9 +68,12 @@
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
   .main {margin-left: 8.33%;}
-  .connect {margin-left: 8.33%}
-  #logo {margin-left: 8.33%; font-size: 2em;}
-  #menu {margin-left: 8.33%; padding: 22px 8.33% 22px 0; text-align: right;}
+  .connect {margin-left: 8.33%;}
+  #logo {font-size: 2em;
+         margin-left: 8.33%;}
+  #menu {padding: 22px 0 22px 0; 
+         text-align: right;}
+  #bio-img {margin: 0;}  
 }
 
 
@@ -114,8 +120,9 @@ header {
 }
 
 #bio-img {
-  max-width: 50%px; 
+  max-width: 100%; 
   height: auto;
+  padding: 15px 0 0;
 }
 
 .main {
