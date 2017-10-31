@@ -182,10 +182,11 @@ textarea{
 
 .portfolio-img {
   position: relative;
-  display: inline;
+  float: left;
   box-sizing: content-box;
   padding: 0 15px;
-  width: 25%;
+  margin-left: 15px;
+  width: 275px;
   max-width: 275px;
 }
 
@@ -196,7 +197,7 @@ textarea{
 
 .portfolio-text {
   position: absolute;
-  bottom: 45px;
+  bottom: 40px;
   left: 15px;
   padding: 10px 0px;
   width: 275px;
@@ -204,7 +205,8 @@ textarea{
   color: #fff;
   font-family: 'Georgia', Times, Times New Roman, serif;
   text-align: center;
-  font-size: 110%;
+  font-size: 1.2em;
+}
 
 footer {
   background-color: #666666;
