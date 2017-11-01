@@ -182,17 +182,15 @@ textarea{
 
 .portfolio-img {
   position: relative;
-  float: left;
-  box-sizing: content-box;
-  padding: 0 15px;
-  margin-left: 15px;
-  width: 275px;
-  max-width: 275px;
+  /* float: left; */
+  /* padding: 0 15px; */ */
+  /* margin-left: 15px; */
+  /* max-width: 275px; */
 }
 
 .portfolio-img img {
   /* margin-bottom: 40px; */
-  max-width: 275px;
+  width: 100%;
 }
 
 .portfolio-text {
@@ -200,7 +198,7 @@ textarea{
   bottom: 40px;
   left: 15px;
   padding: 10px 0px;
-  width: 275px;
+  width: calc(100% - 30px);
   background-color: #4aaaa5;
   color: #fff;
   font-family: 'Georgia', Times, Times New Roman, serif;
