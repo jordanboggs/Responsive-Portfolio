@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 781px) {
+@media only screen and (min-width: 768px) {
   /* For tablets: */
   .col-m-0 {width: 0%;}
   .col-m-1 {width: 8.33%;}
@@ -53,7 +53,7 @@
 }
 
 
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 980px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -103,6 +103,7 @@ header {
   font-weight: bold;
   text-align: center;
   color: #ffffff;
+  width: fit-content
 }
 
 #menu {
@@ -147,6 +148,8 @@ header {
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-weight: bold;
   font-size: 1.4em;
+  text-align: center;
+  
 }
 
 .connect img {
