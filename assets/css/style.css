@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+}
 .container {
   margin-bottom: 50px;
 }
@@ -17,11 +20,6 @@
   padding: 15px;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
 #logo {
   font-size: 2em;
 }
@@ -30,12 +28,92 @@
   text-align: center;
 }
 
+#menu a {
+  color: #999999;
+  text-decoration: none;
+}
+
 .connect {
   margin-bottom: 5%;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For tablets: */
+.main h2 {
+  color: #4aaaa5;
+  font-size: 1.8em;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#logo {
+  background-color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  /* width: fit-content; */
+  /* position: absolute;
+  left: 0; */
+}
+
+
+@media only screen and (min-width: 1px) {
+  .col-xs-0 {width: 0%;}
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+  .container {width: 90%; margin-left: 5%;}
+  #logo: {text-align: center; 
+          width: 100%;
+         }
+  #menu {margin: 5px 0 5px 0; 
+         padding-right: 0%; 
+         text-align: center;
+         /* width: 100%; */
+         /* float: right; */
+         /* margin: 0 5%; */
+        }
+  #bio-img {padding: 0 5px;
+            margin: 0;}
+  #connect-with-me {font-size: 1.2em;}  
+}
+
+@media only screen and (min-width: 641px) {
+  .col-sm-0 {width: 0%;}
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+  .container {width: 90%; margin-left: 5%;}
+  #section-header {text-align: center;}
+  #logo {width: fit-content;}
+  #menu {margin: 5px 0 5px 0; 
+         padding-right: 0%; 
+         text-align: right;
+        }
+  #bio-img {padding: 0 5px;
+            /* margin-left: 16.66%;} */
+  #connect-with-me {font-size: 1.2em;}
+}
+
+@media only screen and (min-width: 769px) {
   .col-m-0 {width: 0%;}
   .col-m-1 {width: 8.33%;}
   .col-m-2 {width: 16.66%;}
@@ -49,15 +127,23 @@
   .col-m-10 {width: 83.33%;}
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
+  .container {width: 80%; margin-left: 10%;}
+  #section-header {text-align: left;}
   #logo {font-size: 1.4em;}
   #menu {margin: 5px 0 5px 0; 
          padding-right: 8.33%; 
-         text-align: right;}
-  #bio-img {padding: 0 5px;}
+         text-align: right;
+         float: right;
+         margin: 0 5%;}
+  img {margin-left: 8.33%}
+  #bio-img {padding: 0 5px;
+            margin-left: 0;}
+  #connect-with-me {font-size: 1.2em;}
+
 }
 
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 981px) {
   /* For desktop: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
@@ -71,13 +157,16 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-  .main {margin-left: 8.33%;}
-  .connect {margin-left: 8.33%;}
-  #logo {font-size: 2em;
-         margin-left: 8.33%;}
-  #menu {padding: 22px 0 22px 0; 
-         text-align: right;}
+  .container {width: 90%; margin: 0 5%;}
+  #logo {font-size: 2em;  
+         /* margin-left: 8.33%;*/}
+  #menu {padding: 2% 0; 
+         text-align: right;
+         float: right;
+         margin: 0 5%;}
   #bio-img {margin: 0;}  
+  .connect img {margin-left: 0;}
+  #connect-with-me {font-size: 1.5em;}
 }
 
 
@@ -99,25 +188,16 @@ header {
   border: solid;
   border-color: #cccccc;
   border-width: 0px 0px 1px 0px;
+  width: 100%;
+  position: relative;
 }
 
-#logo {
-  background-color: #4aaaa5;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-  font-weight: bold;
-  text-align: center;
-  color: #ffffff;
-  width: fit-content
-}
 
 #menu {
   font-size: 1em;
 }
 
-#menu a {
-  color: #999999;
-  text-decoration: none;
-}
+
 
 .row a {
   text-decoration: none;
@@ -134,13 +214,7 @@ header {
   /* background-color: #ffffff; */
 }
 
-.main h2 {
-  color: #4aaaa5;
-  font-size: 1.8em;
-  font-family: 'Georgia', Times, Times New Roman, serif;
-  font-weight: bold;
-  text-align: center;
-}
+
 
 .connect {
   /* background-color: #ffffff; */
@@ -157,7 +231,8 @@ header {
 }
 
 .connect img {
-  width: 54px;
+  /* margin: 0; */
+  padding: 0;
 }
 
 .connect ul {
