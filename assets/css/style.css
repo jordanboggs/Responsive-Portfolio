@@ -265,6 +265,7 @@ textarea{
 
 .portfolio-img {
   position: relative;
+  padding: 0;
   /* float: left; */
   /* padding: 0 15px; */ 
   /* margin-left: 15px; */
@@ -274,20 +275,33 @@ textarea{
 .portfolio-img img {
   /* margin-bottom: 40px; */
   width: 100%;
+  margin-left: 0;
 }
 
 .portfolio-text {
   position: absolute;
-  bottom: 40px;
-  left: 15px;
+  bottom: 10%;
+  /* left: 15px; */
   padding: 10px 0px;
-  width: calc(100% - 30px);
+  width: 100%;
   background-color: #4aaaa5;
   color: #fff;
   font-family: 'Georgia', Times, Times New Roman, serif;
   text-align: center;
   font-size: 1.2em;
 }
+
+/*
+.caption {
+  position: absolute;
+  bottom: 5%;
+  padding: 10px 0px;
+  background-color: #4aaaa5;
+  font-size: 1.2em;
+  color: #fff !important;
+  width: 100%;
+}
+*/
 
 footer {
   background-color: #666666;
