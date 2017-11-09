@@ -72,7 +72,7 @@ body {
   .col-xs-11 {width: 91.66%;}
   .col-xs-12 {width: 100%;}
   .container {width: 90%; margin-left: 5%;}
-  #logo: {text-align: center; 
+  #logo {text-align: center; 
           width: 100%;
          }
   #menu {margin: 5px 0 5px 0; 
@@ -109,7 +109,7 @@ body {
          text-align: right;
         }
   #bio-img {padding: 0 5px;
-            /* margin-left: 16.66%;} */
+            /* margin-left: 16.66%; */}
   #connect-with-me {font-size: 1.2em;}
 }
 
@@ -184,12 +184,13 @@ body {
 }
 
 header {
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   border: solid;
   border-color: #cccccc;
   border-width: 0px 0px 1px 0px;
   width: 100%;
   position: relative;
+  margin-bottom: 4%;
 }
 
 
@@ -211,13 +212,13 @@ header {
 }
 
 .main {
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
 }
 
 
 
 .connect {
-  /* background-color: #ffffff; */
+  background-color: #ffffff;
   text-align: center;
 }
 
