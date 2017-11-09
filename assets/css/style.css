@@ -215,8 +215,6 @@ header {
   background-color: #ffffff;
 }
 
-
-
 .connect {
   background-color: #ffffff;
   text-align: center;
@@ -241,10 +239,11 @@ header {
 }
 
 input[type=text] {
-  width: 500px;
+  width: 100%;
   padding: 16px 20px 12px 20px;
   margin: 8px 0;
-  display: inline-block;
+  border: 1px solid gray;
+  /* display: inline-block; */
 }
 
 button {
@@ -257,9 +256,10 @@ button {
 }
 
 textarea{
-  width: 500px;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
+  border: 1px solid gray;
   display: inline-block;
 }
 
